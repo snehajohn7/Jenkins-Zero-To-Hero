@@ -1,5 +1,9 @@
 pipeline {
   agent none
+  tools{
+        maven 'Maven 3.9.6' 
+        jdk 'jdk11'
+       }
   stages {
     stage('Back-end-Build') {
       agent {
